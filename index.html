@@ -420,10 +420,11 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 	.app-grid{grid-template-columns:repeat(2,1fr)}
 	.about-teaser__checks{grid-template-columns:1fr}
 	.topbar__social{display:none}
-	.main__cta,.main__actions .btn{display:none}
+	.main__cta{display:none}
 	.nav-toggle{display:flex}
 	.main-nav{position:relative}
 	.main__actions{gap:8px}
+	.theme-toggle{position:fixed;bottom:90px;left:16px;z-index:90;width:42px;height:42px;border-radius:50%;box-shadow:var(--shadow-md)}
 	.primary-menu{position:fixed;top:0;right:0;height:100vh;width:min(320px,82%);flex-direction:column;align-items:stretch;justify-content:flex-start;background:var(--n-surface);box-shadow:var(--shadow-lg);padding:80px 20px 30px;transform:translateX(100%);transition:.35s ease;z-index:200;overflow-y:auto;gap:4px}
 	.primary-menu.open{transform:translateX(0)}
 	.primary-menu>li>a{display:block;padding:14px}
@@ -453,7 +454,6 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 				</a>
 			</div>
 			<nav class="main-nav" aria-label="منوی اصلی">
-				<button class="nav-toggle" aria-label="باز و بسته کردن منو"><span></span><span></span><span></span></button>
 				<ul id="primary-menu" class="primary-menu">
 					<li class="current-menu-item"><a href="#hero">خانه</a></li>
 					<li><a href="#services">محصولات</a></li>
@@ -464,6 +464,7 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 				</ul>
 			</nav>
 			<div class="main__actions">
+				<button class="nav-toggle" aria-label="باز و بسته کردن منو"><span></span><span></span><span></span></button>
 				<button class="theme-toggle" id="theme-toggle" aria-label="تغییر حالت روشن/تاریک" title="حالت تاریک / روشن">🌙</button>
 				<a class="btn btn--accent main__cta" href="#contact">استعلام قیمت</a>
 			</div>
