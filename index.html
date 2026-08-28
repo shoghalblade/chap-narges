@@ -425,8 +425,9 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 	.main-nav{position:relative}
 	.main__actions{gap:8px}
 	.theme-toggle{position:fixed;bottom:90px;left:16px;z-index:90;width:42px;height:42px;border-radius:50%;box-shadow:var(--shadow-md)}
-	.hero__float{position:static;margin:4px;display:inline-block;animation:none;font-size:0.8rem;padding:8px}
-	.hero__float--1, .hero__float--2{position:static}
+	.hero__float{position:absolute;font-size:0.75rem;padding:8px 12px;border-radius:10px;box-shadow:var(--shadow-md)}
+	.hero__float--1{top:-16px;right:10px;left:auto}
+	.hero__float--2{bottom:-16px;left:10px;right:auto}
 	.primary-menu{position:fixed;top:0;right:0;height:100vh;width:min(320px,82%);flex-direction:column;align-items:stretch;justify-content:flex-start;background:var(--n-surface);box-shadow:var(--shadow-lg);padding:80px 20px 30px;transform:translateX(100%);transition:.35s ease;z-index:200;overflow-y:auto;gap:4px}
 	.primary-menu.open{transform:translateX(0)}
 	.primary-menu>li>a{display:block;padding:14px}
