@@ -451,18 +451,22 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 
 
 /* Partner Section */
-.partner-section{background:var(--n-bg,#f5f5f5);padding:50px 0}
-.partner-section h3{text-align:center;color:#1a1a2e;font-size:1.3rem;margin-bottom:35px;font-weight:800}
+.partner-section{background:#0d1117;padding:50px 0}
+.partner-section h3{text-align:center;color:#C8A84E;font-size:1.3rem;margin-bottom:35px;font-weight:800}
 .partner-marquee{overflow:hidden;width:100%;padding:10px 0;position:relative}
 .partner-marquee::before,.partner-marquee::after{content:'';position:absolute;top:0;width:80px;height:100%;z-index:2;pointer-events:none}
-.partner-marquee::before{left:0;background:linear-gradient(to right,#fff,transparent)}
-.partner-marquee::after{right:0;background:linear-gradient(to left,#fff,transparent)}
+.partner-marquee::before{left:0;background:linear-gradient(to right,#0d1117,transparent)}
+.partner-marquee::after{right:0;background:linear-gradient(to left,#0d1117,transparent)}
 .partner-track{display:flex;gap:30px;animation:marquee 25s linear infinite;width:max-content}
-.partner-card{min-width:220px;min-height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff;border:1px solid #e9ecef;border-radius:20px;padding:20px 30px;flex-shrink:0;transition:all .3s ease;cursor:default;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-.partner-card:hover{border-color:#C8A84E;box-shadow:0 8px 30px rgba(200,168,78,.2);transform:translateY(-4px)}
-.partner-card img{max-height:80px;max-width:180px;object-fit:contain;margin-bottom:8px}
-.partner-card span{font-size:.9rem;color:#333;font-weight:700;text-align:center}
+.partner-card{min-width:260px;min-height:140px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:25px 35px;flex-shrink:0;transition:all .3s ease;cursor:default;backdrop-filter:blur(4px)}
+.partner-card:hover{border-color:#C8A84E;box-shadow:0 8px 30px rgba(200,168,78,.15);transform:translateY(-4px);background:rgba(255,255,255,.1)}
+.partner-card img{max-height:100px;max-width:220px;object-fit:contain;margin-bottom:10px;filter:brightness(0) invert(1)}
+.partner-card span{font-size:1rem;color:rgba(255,255,255,.85);font-weight:700;text-align:center}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* Theme toggle in mobile menu */
+.menu-theme-toggle{list-style:none;padding:10px 20px;border-top:1px solid var(--n-border);margin-top:10px}
+.menu-theme-toggle .theme-toggle{width:100%;border-radius:10px;font-size:1rem;padding:10px}
 </style>
 </head>
 <body>
@@ -486,11 +490,11 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 					<li><a href="#portfolio">نمونه‌کارها</a></li>
 					<li><a href="#about">درباره ما</a></li>
 					<li><a href="#contact">تماس با ما</a></li>
+					<li class="menu-theme-toggle"><button class="theme-toggle" id="theme-toggle" aria-label="تغییر حالت روشن/تاریک" title="حالت تاریک / روشن">🌙</button></li>
 				</ul>
 			</nav>
 			<div class="main__actions">
 				<button class="nav-toggle" aria-label="باز و بسته کردن منو"><span></span><span></span><span></span></button>
-				<button class="theme-toggle" id="theme-toggle" aria-label="تغییر حالت روشن/تاریک" title="حالت تاریک / روشن">🌙</button>
 				<a class="btn btn--accent main__cta" href="#contact">استعلام قیمت</a>
 			</div>
 		</div>
