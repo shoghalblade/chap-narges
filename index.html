@@ -464,9 +464,6 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 .partner-card span{font-size:1rem;color:var(--n-heading);font-weight:700;text-align:center}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-/* Theme toggle in mobile menu */
-.menu-theme-toggle{list-style:none;padding:10px 20px;border-top:1px solid var(--n-border);margin-top:10px}
-.menu-theme-toggle .theme-toggle{width:100%;border-radius:10px;font-size:1rem;padding:10px}
 </style>
 </head>
 <body>
@@ -490,11 +487,11 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 					<li><a href="#portfolio">نمونه‌کارها</a></li>
 					<li><a href="#about">درباره ما</a></li>
 					<li><a href="#contact">تماس با ما</a></li>
-					<li class="menu-theme-toggle"><button class="theme-toggle" id="theme-toggle" aria-label="تغییر حالت روشن/تاریک" title="حالت تاریک / روشن">🌙</button></li>
 				</ul>
 			</nav>
 			<div class="main__actions">
 				<button class="nav-toggle" aria-label="باز و بسته کردن منو"><span></span><span></span><span></span></button>
+				<button class="theme-toggle" id="theme-toggle" aria-label="تغییر حالت روشن/تاریک" title="حالت تاریک / روشن">🌙</button>
 				<a class="btn btn--accent main__cta" href="#contact">استعلام قیمت</a>
 			</div>
 		</div>
@@ -635,20 +632,19 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 		<h3>شرکای تجاری ما</h3>
 		<div class="partner-marquee">
 			<div class="partner-track">
-				<!-- Replace with real partner logos -->
-				<div class="partner-logo" style="padding:0;background:transparent;border:none"><img src="golrang-logo.webp" alt="گلرنگ" style="height:50px;object-fit:contain"></div>
-				<div class="partner-logo">شرکت الف</div>
-				<div class="partner-logo">شرکت ب</div>
-				<div class="partner-logo">شرکت ج</div>
-				<div class="partner-logo">شرکت د</div>
-				<div class="partner-logo">شرکت ه</div>
+				<div class="partner-card"><img src="golrang-logo.webp" alt="گلرنگ"><span>گلرنگ</span></div>
+				<div class="partner-card"><span>شرکت الف</span></div>
+				<div class="partner-card"><span>شرکت ب</span></div>
+				<div class="partner-card"><span>شرکت ج</span></div>
+				<div class="partner-card"><span>شرکت د</span></div>
+				<div class="partner-card"><span>شرکت ه</span></div>
 				<!-- Duplicate for seamless loop -->
-				<div class="partner-logo">گلرنگ</div>
-				<div class="partner-logo">شرکت الف</div>
-				<div class="partner-logo">شرکت ب</div>
-				<div class="partner-logo">شرکت ج</div>
-				<div class="partner-logo">شرکت د</div>
-				<div class="partner-logo">شرکت ه</div>
+				<div class="partner-card"><img src="golrang-logo.webp" alt="گلرنگ"><span>گلرنگ</span></div>
+				<div class="partner-card"><span>شرکت الف</span></div>
+				<div class="partner-card"><span>شرکت ب</span></div>
+				<div class="partner-card"><span>شرکت ج</span></div>
+				<div class="partner-card"><span>شرکت د</span></div>
+				<div class="partner-card"><span>شرکت ه</span></div>
 			</div>
 		</div>
 	</div>
