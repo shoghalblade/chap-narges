@@ -451,17 +451,17 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 
 
 /* Partner Section */
-.partner-section{background:#0d1117;padding:50px 0}
-.partner-section h3{text-align:center;color:#C8A84E;font-size:1.3rem;margin-bottom:35px;font-weight:800}
+.partner-section{background:var(--n-dark);padding:50px 0}
+.partner-section h3{text-align:center;color:var(--n-accent);font-size:1.3rem;margin-bottom:35px;font-weight:800}
 .partner-marquee{overflow:hidden;width:100%;padding:10px 0;position:relative}
 .partner-marquee::before,.partner-marquee::after{content:'';position:absolute;top:0;width:80px;height:100%;z-index:2;pointer-events:none}
-.partner-marquee::before{left:0;background:linear-gradient(to right,#0d1117,transparent)}
-.partner-marquee::after{right:0;background:linear-gradient(to left,#0d1117,transparent)}
+.partner-marquee::before{left:0;background:linear-gradient(to right,var(--n-dark),transparent)}
+.partner-marquee::after{right:0;background:linear-gradient(to left,var(--n-dark),transparent)}
 .partner-track{display:flex;gap:30px;animation:marquee 25s linear infinite;width:max-content}
-.partner-card{min-width:260px;min-height:140px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:25px 35px;flex-shrink:0;transition:all .3s ease;cursor:default;backdrop-filter:blur(4px)}
-.partner-card:hover{border-color:#C8A84E;box-shadow:0 8px 30px rgba(200,168,78,.15);transform:translateY(-4px);background:rgba(255,255,255,.1)}
-.partner-card img{max-height:100px;max-width:220px;object-fit:contain;margin-bottom:10px;filter:brightness(0) invert(1)}
-.partner-card span{font-size:1rem;color:rgba(255,255,255,.85);font-weight:700;text-align:center}
+.partner-card{min-width:300px;min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--n-surface);border:1px solid var(--n-border);border-radius:24px;padding:30px 40px;flex-shrink:0;transition:all .3s ease;cursor:default;box-shadow:0 4px 15px rgba(0,0,0,.08)}
+.partner-card:hover{border-color:var(--n-accent);box-shadow:0 8px 30px rgba(0,188,212,.15);transform:translateY(-4px);background:var(--n-surface)}
+.partner-card img{max-height:120px;max-width:260px;object-fit:contain;margin-bottom:10px;}
+.partner-card span{font-size:1rem;color:var(--n-heading);font-weight:700;text-align:center}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
 /* Theme toggle in mobile menu */
