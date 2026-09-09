@@ -679,5 +679,8 @@ document.querySelectorAll('.pf-btn').forEach(b => b.addEventListener('click', ()
 .pf-btn:hover{border-color:var(--n-accent);color:var(--n-accent)}
 .pf-btn.is-active{background:linear-gradient(135deg,var(--n-accent),#1c52a8);border-color:transparent;color:#fff;font-weight:700}
 @media(max-width:640px){.portfolio-grid{grid-template-columns:1fr 1fr}.page-hero h1{font-size:1.8rem}}
+
+/* light mode: فاصله بیشتر بین شرکا و CTA */
+body[data-theme="light"] .cta-block{margin-top:34px;margin-bottom:96px}
 </style>
 </html>
