@@ -464,6 +464,9 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 .partner-card span{font-size:1rem;color:var(--n-heading);font-weight:700;text-align:center}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
+
+/* light mode: فاصله بیشتر بین شرکا و CTA */
+html[data-theme="light"] .cta-block{margin-top:90px;margin-bottom:96px}
 </style>
 </head>
 <header class="site-header">
@@ -494,33 +497,61 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 		</div>
 	</div>
 </header>
-
-<!-- صفحه نمونه‌کارها -->
-<main class="page-hero">
+<section class="page-hero">
   <div class="container">
-    <nav class="breadcrumb" style="font-size:.85rem;color:var(--n-medium);margin-bottom:14px">
-      <a href="index.html" style="color:var(--n-accent)">خانه</a> / <span>نمونه‌کارها</span>
+    <nav class="breadcrumb" style="font-size:.85rem;margin-bottom:14px;position:relative;z-index:2">
+      <a href="index.html" style="color:#fff;opacity:.75">خانه</a> <span style="opacity:.5">/</span> <span style="color:var(--n-accent)">نمونه‌کارها</span>
     </nav>
-    <h1 style="font-size:2.4rem;font-weight:900;background:linear-gradient(135deg,var(--n-accent),#4da3ff);-webkit-background-clip:text;background-clip:text;color:transparent">نمونه‌کارها</h1>
-    <p style="color:var(--n-medium);margin-top:10px;max-width:640px">گزیده‌ای از اتیکت‌های تولیدشده برای برندهای صنعتی و مصرفی — بر اساس نوع جنس.</p>
+    <h1 style="font-size:2.4rem;font-weight:900;background:linear-gradient(135deg,#4dd8e4,#9ec8ff);-webkit-background-clip:text;background-clip:text;color:transparent">نمونه‌کارها</h1>
+    <p>گزیده‌ای از اتیکت‌های تولیدشده برای برندهای صنعتی و مصرفی.</p>
   </div>
-</main>
-
+</section>
 <section class="section section--gray" style="padding-top:56px">
   <div class="container">
     <div class="port-filter" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:36px">
       <button class="pf-btn is-active" data-filter="all">همه</button>
-      <button class="pf-btn" data-filter="کاغذی">کاغذی</button>
-      <button class="pf-btn" data-filter="فیلمی">فیلمی</button>
-      <button class="pf-btn" data-filter="امنیتی">امنیتی</button>
-      <button class="pf-btn" data-filter="متمایز">متمایز</button>
+<button class="pf-btn" data-filter="آرایشی">آرایشی</button>
+<button class="pf-btn" data-filter="بهداشتی">بهداشتی</button>
+<button class="pf-btn" data-filter="تولید">تولید</button>
+<button class="pf-btn" data-filter="غذایی">غذایی</button>
+<button class="pf-btn" data-filter="محصولات">محصولات</button>
+<button class="pf-btn" data-filter="کشاورزی">کشاورزی</button>
     </div>
     <div class="portfolio-grid" id="portGrid">
-      <article class="port-item" data-cat="کاغذی"><span class="port-item__cat">کاغذی</span><div class="port-item__bg">🍫</div><div class="port-item__overlay"><h3>اتیکت مواد غذایی</h3><span>نمونه‌کار ۱</span></div></article><article class="port-item" data-cat="فیلمی"><span class="port-item__cat">فیلمی</span><div class="port-item__bg">🧴</div><div class="port-item__overlay"><h3>اتیکت شامپوی لوکس</h3><span>نمونه‌کار ۲</span></div></article><article class="port-item" data-cat="امنیتی"><span class="port-item__cat">امنیتی</span><div class="port-item__bg">🛡</div><div class="port-item__overlay"><h3>لیبل امنیتی ضد جعل</h3><span>نمونه‌کار ۳</span></div></article><article class="port-item" data-cat="کاغذی"><span class="port-item__cat">کاغذی</span><div class="port-item__bg">💊</div><div class="port-item__overlay"><h3>اتیکت محصول دارویی</h3><span>نمونه‌کار ۴</span></div></article><article class="port-item" data-cat="فیلمی"><span class="port-item__cat">فیلمی</span><div class="port-item__bg">🥤</div><div class="port-item__overlay"><h3>اتیکت نوشیدنی مقاوم</h3><span>نمونه‌کار ۵</span></div></article><article class="port-item" data-cat="متمایز"><span class="port-item__cat">متمایز</span><div class="port-item__bg">⚙️</div><div class="port-item__overlay"><h3>اتیکت قطعات صنعتی</h3><span>نمونه‌کار ۶</span></div></article><article class="port-item" data-cat="کاغذی"><span class="port-item__cat">کاغذی</span><div class="port-item__bg">🧀</div><div class="port-item__overlay"><h3>لیبل لبنیات</h3><span>نمونه‌کار ۷</span></div></article><article class="port-item" data-cat="فیلمی"><span class="port-item__cat">فیلمی</span><div class="port-item__bg">🧽</div><div class="port-item__overlay"><h3>اتیکت شوینده</h3><span>نمونه‌کار ۸</span></div></article><article class="port-item" data-cat="امنیتی"><span class="port-item__cat">امنیتی</span><div class="port-item__bg">🔒</div><div class="port-item__overlay"><h3>هولوگرام امنیتی</h3><span>نمونه‌کار ۹</span></div></article><article class="port-item" data-cat="متمایز"><span class="port-item__cat">متمایز</span><div class="port-item__bg">🏷</div><div class="port-item__overlay"><h3>اتیکت پارچه و پوشاک</h3><span>نمونه‌کار ۱۰</span></div></article><article class="port-item" data-cat="کاغذی"><span class="port-item__cat">کاغذی</span><div class="port-item__bg">☕</div><div class="port-item__overlay"><h3>لیبل قهوه و نوشیدنی گرم</h3><span>نمونه‌کار ۱۱</span></div></article><article class="port-item" data-cat="فیلمی"><span class="port-item__cat">فیلمی</span><div class="port-item__bg">🧴‍</div><div class="port-item__overlay"><h3>اتیکت آرایشی بهداشتی</h3><span>نمونه‌کار ۱۲</span></div></article>
+      <article class="port-item" data-cat="محصولات"><span class="port-item__cat">محصولات</span><div class="port-item__img"><img src="images/portfolio/mavtan-oil-bottle.jpg" alt="روغن موتور MAVTAN" loading="lazy"></div><div class="port-item__overlay"><h3>روغن موتور MAVTAN</h3><span>اتیکت بطری 1170g</span></div></article>
+<article class="port-item" data-cat="محصولات"><span class="port-item__cat">محصولات</span><div class="port-item__img"><img src="images/portfolio/mavtan-oil-jerrycan.jpg" alt="روغن موتور MAVTAN" loading="lazy"></div><div class="port-item__overlay"><h3>روغن موتور MAVTAN</h3><span>اتیکت قوطی 20 لیتری</span></div></article>
+<article class="port-item" data-cat="محصولات"><span class="port-item__cat">محصولات</span><div class="port-item__img"><img src="images/portfolio/brake-fluid-blue.jpg" alt="روغن ترمز" loading="lazy"></div><div class="port-item__overlay"><h3>روغن ترمز</h3><span>بطری آبی</span></div></article>
+<article class="port-item" data-cat="محصولات"><span class="port-item__cat">محصولات</span><div class="port-item__img"><img src="images/portfolio/brake-fluid-yellow.jpg" alt="روغن ترمز" loading="lazy"></div><div class="port-item__overlay"><h3>روغن ترمز</h3><span>بطری زرد</span></div></article>
+<article class="port-item" data-cat="محصولات"><span class="port-item__cat">محصولات</span><div class="port-item__img"><img src="images/portfolio/bio-motors-oil.jpg" alt="روغن موتور BIO-Motors" loading="lazy"></div><div class="port-item__overlay"><h3>روغن موتور BIO-Motors</h3><span>قوطی قرمز 4L</span></div></article>
+<article class="port-item" data-cat="محصولات"><span class="port-item__cat">محصولات</span><div class="port-item__img"><img src="images/portfolio/isago-oil.jpg" alt="روغن موتور ISAGO" loading="lazy"></div><div class="port-item__overlay"><h3>روغن موتور ISAGO</h3><span>بطری آبی</span></div></article>
+<article class="port-item" data-cat="محصولات"><span class="port-item__cat">محصولات</span><div class="port-item__img"><img src="images/portfolio/apex-rotella.jpg" alt="روغن موتور APEX" loading="lazy"></div><div class="port-item__overlay"><h3>روغن موتور APEX</h3><span>قوطی فلزی</span></div></article>
+<article class="port-item" data-cat="محصولات"><span class="port-item__cat">محصولات</span><div class="port-item__img"><img src="images/portfolio/gp300-oil.jpg" alt="روغن موتور GP300" loading="lazy"></div><div class="port-item__overlay"><h3>روغن موتور GP300</h3><span>بطری طلایی</span></div></article>
+<article class="port-item" data-cat="محصولات"><span class="port-item__cat">محصولات</span><div class="port-item__img"><img src="images/portfolio/amitis-gear-oil.jpg" alt="روغن گیربکس AMITIS" loading="lazy"></div><div class="port-item__overlay"><h3>روغن گیربکس AMITIS</h3><span>بطری سبز 1L</span></div></article>
+<article class="port-item" data-cat="تولید"><span class="port-item__cat">تولید</span><div class="port-item__img"><img src="images/portfolio/label-rolls.jpg" alt="رول‌های اتیکت چاپ‌شده" loading="lazy"></div><div class="port-item__overlay"><h3>رول‌های اتیکت چاپ‌شده</h3><span>نمایش تولید انبوه</span></div></article>
+<article class="port-item" data-cat="محصولات"><span class="port-item__cat">محصولات</span><div class="port-item__img"><img src="images/portfolio/depol-samples.jpg" alt="مجموعه DEPOL" loading="lazy"></div><div class="port-item__overlay"><h3>مجموعه DEPOL</h3><span>نمایش نمونه محصولات</span></div></article>
+<article class="port-item" data-cat="محصولات"><span class="port-item__cat">محصولات</span><div class="port-item__img"><img src="images/portfolio/satel-ultima.jpg" alt="روغن SATEL/ULTIMA" loading="lazy"></div><div class="port-item__overlay"><h3>روغن SATEL/ULTIMA</h3><span>روغن و ضدیخ</span></div></article>
+<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/jawhar-tea.jpg" alt="چای Jawhar" loading="lazy"></div><div class="port-item__overlay"><h3>چای Jawhar</h3><span>جعبه 100 عددی</span></div></article>
+<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/multicafe-gold.jpg" alt="قهوه MultiCafe Gold" loading="lazy"></div><div class="port-item__overlay"><h3>قهوه MultiCafe Gold</h3><span>شیشه</span></div></article>
+<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/multicafe-classic.jpg" alt="قهوه MultiCafe Classic" loading="lazy"></div><div class="port-item__overlay"><h3>قهوه MultiCafe Classic</h3><span>شیشه</span></div></article>
+<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/lorenzo-garlic.jpg" alt="ترشی سیر Lorenzo" loading="lazy"></div><div class="port-item__overlay"><h3>ترشی سیر Lorenzo</h3><span>شیشه</span></div></article>
+<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/lorenzo-olive.jpg" alt="زیتون Lorenzo" loading="lazy"></div><div class="port-item__overlay"><h3>زیتون Lorenzo</h3><span>شیشه</span></div></article>
+<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/alolbaaz-pepper.jpg" alt="فلفل Alolbaaz" loading="lazy"></div><div class="port-item__overlay"><h3>فلفل Alolbaaz</h3><span>شیشه</span></div></article>
+<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/baghaa-jam.jpg" alt="مربای توت‌فرنگی Baghaa" loading="lazy"></div><div class="port-item__overlay"><h3>مربای توت‌فرنگی Baghaa</h3><span>شیشه</span></div></article>
+<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/thai-chili-sauce.jpg" alt="سس فلفل تایلندی" loading="lazy"></div><div class="port-item__overlay"><h3>سس فلفل تایلندی</h3><span>شیشه</span></div></article>
+<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/bassam-pomegranate.jpg" alt="رب انار BASSAM" loading="lazy"></div><div class="port-item__overlay"><h3>رب انار BASSAM</h3><span>شیشه تیره</span></div></article>
+<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/kaminer-jam.jpg" alt="مربای Kaminer" loading="lazy"></div><div class="port-item__overlay"><h3>مربای Kaminer</h3><span>شیشه</span></div></article>
+<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/badr-garlic.jpg" alt="ترشی سیر BADR" loading="lazy"></div><div class="port-item__overlay"><h3>ترشی سیر BADR</h3><span>شیشه</span></div></article>
+<article class="port-item" data-cat="آرایشی"><span class="port-item__cat">آرایشی</span><div class="port-item__img"><img src="images/portfolio/takeoff-perfume.jpg" alt="ادکلن خودرو TAKE OFF" loading="lazy"></div><div class="port-item__overlay"><h3>ادکلن خودرو TAKE OFF</h3><span>اسپری</span></div></article>
+<article class="port-item" data-cat="آرایشی"><span class="port-item__cat">آرایشی</span><div class="port-item__img"><img src="images/portfolio/vaseline.jpg" alt="وازلین Blue Seal" loading="lazy"></div><div class="port-item__overlay"><h3>وازلین Blue Seal</h3><span>پلاستیک</span></div></article>
+<article class="port-item" data-cat="آرایشی"><span class="port-item__cat">آرایشی</span><div class="port-item__img"><img src="images/portfolio/highness-mask.jpg" alt="ماسک سیاه HIGHNESS" loading="lazy"></div><div class="port-item__overlay"><h3>ماسک سیاه HIGHNESS</h3><span>جعبه+بطری</span></div></article>
+<article class="port-item" data-cat="آرایشی"><span class="port-item__cat">آرایشی</span><div class="port-item__img"><img src="images/portfolio/stemcell-bodywash.jpg" alt="شستشوی بدن Stem Cell" loading="lazy"></div><div class="port-item__overlay"><h3>شستشوی بدن Stem Cell</h3><span>بطری+جعبه</span></div></article>
+<article class="port-item" data-cat="کشاورزی"><span class="port-item__cat">کشاورزی</span><div class="port-item__img"><img src="images/portfolio/liquid-sulfur.jpg" alt="کود Liquid Sulfur+K" loading="lazy"></div><div class="port-item__overlay"><h3>کود Liquid Sulfur+K</h3><span>بطری پلاستیکی</span></div></article>
+<article class="port-item" data-cat="کشاورزی"><span class="port-item__cat">کشاورزی</span><div class="port-item__img"><img src="images/portfolio/alpha-cal.jpg" alt="کود Alpha Cal 27" loading="lazy"></div><div class="port-item__overlay"><h3>کود Alpha Cal 27</h3><span>بطری</span></div></article>
+<article class="port-item" data-cat="بهداشتی"><span class="port-item__cat">بهداشتی</span><div class="port-item__img"><img src="images/portfolio/jaksons-baby.jpg" alt="شامپو بچه Jaksons" loading="lazy"></div><div class="port-item__overlay"><h3>شامپو بچه Jaksons</h3><span>بطری</span></div></article>
+<article class="port-item" data-cat="بهداشتی"><span class="port-item__cat">بهداشتی</span><div class="port-item__img"><img src="images/portfolio/stemcell-shampoo.jpg" alt="شامپو Stem Cell" loading="lazy"></div><div class="port-item__overlay"><h3>شامپو Stem Cell</h3><span>بطری+جعبه</span></div></article>
     </div>
   </div>
 </section>
-
 <footer class="site-footer">
 	<div class="footer__top">
 		<div class="container footer-grid">
@@ -663,24 +694,6 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 
 </body>
 
-<script>
-// فیلتر دسته‌بندی
-document.querySelectorAll('.pf-btn').forEach(b => b.addEventListener('click', () => {
-  document.querySelectorAll('.pf-btn').forEach(x => x.classList.remove('is-active'));
-  b.classList.add('is-active');
-  const f = b.dataset.filter;
-  document.querySelectorAll('.port-item').forEach(it => {
-    it.style.display = (f === 'all' || it.dataset.cat === f) ? '' : 'none';
-  });
-}));
-</script>
-<style>
-.pf-btn{background:transparent;border:1px solid rgba(0,188,212,.35);color:var(--n-medium);padding:8px 22px;border-radius:30px;cursor:pointer;font-family:inherit;font-size:.9rem;transition:.2s}
-.pf-btn:hover{border-color:var(--n-accent);color:var(--n-accent)}
-.pf-btn.is-active{background:linear-gradient(135deg,var(--n-accent),#1c52a8);border-color:transparent;color:#fff;font-weight:700}
-@media(max-width:640px){.portfolio-grid{grid-template-columns:1fr 1fr}.page-hero h1{font-size:1.8rem}}
-
-/* light mode: فاصله بیشتر بین شرکا و CTA */
-html[data-theme="light"] .cta-block{margin-top:90px;margin-bottom:96px}
-</style>
+<script>document.querySelectorAll(".pf-btn").forEach(function(b){b.addEventListener("click",function(){document.querySelectorAll(".pf-btn").forEach(function(x){x.classList.remove("is-active")});b.classList.add("is-active");var f=b.dataset.filter;document.querySelectorAll(".port-item").forEach(function(it){it.style.display=(f==="all"||it.dataset.cat===f)?"":"none"})})})</script>
+<style>.pf-btn{background:transparent;border:1px solid rgba(0,188,212,.35);color:var(--n-medium);padding:8px 22px;border-radius:30px;cursor:pointer;font-family:inherit;font-size:.9rem;transition:.2s}.pf-btn:hover{border-color:var(--n-accent);color:var(--n-accent)}.pf-btn.is-active{background:linear-gradient(135deg,var(--n-accent),#1c52a8);border-color:transparent;color:#fff;font-weight:700}.port-item__img{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(135deg,var(--n-prime),#1d476f);overflow:hidden}.port-item__img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.port-item:hover .port-item__img img{transform:scale(1.08)}.port-item__bg{display:none}@media(max-width:640px){.portfolio-grid{grid-template-columns:1fr 1fr}.page-hero h1{font-size:1.8rem}}</style>
 </html>
