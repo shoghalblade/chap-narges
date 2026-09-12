@@ -467,6 +467,14 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 
 /* light mode: فاصله بیشتر بین شرکا و CTA */
 html[data-theme="light"] .cta-block{margin-top:90px;margin-bottom:96px}
+
+/* Lightbox */
+.lb-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9999;place-items:center;cursor:zoom-out;backdrop-filter:blur(6px)}
+.lb-overlay.is-open{display:grid}
+.lb-overlay img{max-width:90vw;max-height:85vh;border-radius:12px;box-shadow:0 8px 40px rgba(0,0,0,.5);object-fit:contain}
+.lb-close{position:absolute;top:20px;left:20px;color:#fff;font-size:2rem;cursor:pointer;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.15);transition:.2s}
+.lb-close:hover{background:rgba(255,255,255,.3)}
+.lb-caption{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:#fff;font-size:1.1rem;text-align:center;background:rgba(0,0,0,.5);padding:8px 20px;border-radius:8px;max-width:80vw;white-space:nowrap}
 </style>
 </head>
 <header class="site-header">
@@ -709,5 +717,35 @@ html[data-theme="light"] .cta-block{margin-top:90px;margin-bottom:96px}
 </body>
 
 <script>document.querySelectorAll(".pf-btn").forEach(function(b){b.addEventListener("click",function(){document.querySelectorAll(".pf-btn").forEach(function(x){x.classList.remove("is-active")});b.classList.add("is-active");var f=b.dataset.filter;document.querySelectorAll(".port-item").forEach(function(it){it.style.display=(f==="all"||it.dataset.cat===f)?"":"none"})})})</script>
-<style>.pf-btn{background:transparent;border:1px solid rgba(0,188,212,.35);color:var(--n-medium);padding:8px 22px;border-radius:30px;cursor:pointer;font-family:inherit;font-size:.9rem;transition:.2s}.pf-btn:hover{border-color:var(--n-accent);color:var(--n-accent)}.pf-btn.is-active{background:linear-gradient(135deg,var(--n-accent),#1c52a8);border-color:transparent;color:#fff;font-weight:700}.port-item__img{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(135deg,var(--n-prime),#1d476f);overflow:hidden}.port-item__img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.port-item:hover .port-item__img img{transform:scale(1.08)}.port-item__bg{display:none}@media(max-width:640px){.portfolio-grid{grid-template-columns:1fr 1fr}.page-hero h1{font-size:1.8rem}}</style>
+<style>.pf-btn{background:transparent;border:1px solid rgba(0,188,212,.35);color:var(--n-medium);padding:8px 22px;border-radius:30px;cursor:pointer;font-family:inherit;font-size:.9rem;transition:.2s}.pf-btn:hover{border-color:var(--n-accent);color:var(--n-accent)}.pf-btn.is-active{background:linear-gradient(135deg,var(--n-accent),#1c52a8);border-color:transparent;color:#fff;font-weight:700}.port-item__img{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(135deg,var(--n-prime),#1d476f);overflow:hidden}.port-item__img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.port-item:hover .port-item__img img{transform:scale(1.08)}.port-item__bg{display:none}@media(max-width:640px){.portfolio-grid{grid-template-columns:1fr 1fr}.page-hero h1{font-size:1.8rem}}
+/* Lightbox */
+.lb-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9999;place-items:center;cursor:zoom-out;backdrop-filter:blur(6px)}
+.lb-overlay.is-open{display:grid}
+.lb-overlay img{max-width:90vw;max-height:85vh;border-radius:12px;box-shadow:0 8px 40px rgba(0,0,0,.5);object-fit:contain}
+.lb-close{position:absolute;top:20px;left:20px;color:#fff;font-size:2rem;cursor:pointer;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.15);transition:.2s}
+.lb-close:hover{background:rgba(255,255,255,.3)}
+.lb-caption{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:#fff;font-size:1.1rem;text-align:center;background:rgba(0,0,0,.5);padding:8px 20px;border-radius:8px;max-width:80vw;white-space:nowrap}
+</style>
+<script>
+(function(){
+  var ov=document.createElement('div');
+  ov.className='lb-overlay';
+  ov.innerHTML='<div class="lb-close">\u2715</div><img src=""><div class="lb-caption"></div>';
+  document.body.appendChild(ov);
+  var img=ov.querySelector('img'), cap=ov.querySelector('.lb-caption');
+  function close(){ov.classList.remove('is-open');document.body.style.overflow=''}
+  ov.addEventListener('click',function(e){if(e.target!==img)close()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+  document.querySelectorAll('.port-item').forEach(function(el){
+    el.style.cursor='zoom-in';
+    el.addEventListener('click',function(){
+      var i=el.querySelector('img');
+      img.src=i.src;
+      cap.textContent=el.querySelector('h3').textContent+' \u2014 '+el.querySelector('.port-item__overlay span').textContent;
+      ov.classList.add('is-open');
+      document.body.style.overflow='hidden';
+    });
+  });
+})();
+</script>
 </html>
