@@ -1,0 +1,45 @@
+# چاپ نرگس — Apache config (DirectAdmin)
+Options -Indexes
+
+# UTF-8 for Persian filenames
+AddDefaultCharset UTF-8
+
+# Clean URLs: /services/اتیکت-کاغذی/ -> /services/اتیکت-کاغذی.html
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*?)/?$ $1.html [L]
+
+# 301: old GitHub-Pages subpath -> root (run on main host)
+RewriteCond %{REQUEST_URI} ^/chap-narges/(.*)$
+RewriteRule ^chap-narges/(.*)$ /$1 [R=301,L]
+
+# 301: old English slugs -> Persian filenames
+Redirect 301 /services/kaghazi.html /services/اتیکت-کاغذی.html
+Redirect 301 /services/filmi.html /services/اتیکت-فیلمی.html
+Redirect 301 /services/amoniti.html /services/اتیکت-ضد-جعل.html
+Redirect 301 /services/chasp-doona.html /services/اتیکت-بدون-چسب.html
+Redirect 301 /services/chasp-mamooli.html /services/پشت-چسب-دار-معمولی.html
+Redirect 301 /services/chasp-mtamayez.html /services/پشت-چسب-دار-متمایز.html
+Redirect 301 /services/roli.html /services/اتیکت-رولی-و-بارکد.html
+Redirect 301 /services/daikat.html /services/دایکات.html
+
+# Old products pages -> portfolio (folder removed)
+RedirectMatch 301 ^/products/.*$ /portfolio.html
+
+# Custom 404
+ErrorDocument 404 /404.html
+
+# Compression + cache
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
