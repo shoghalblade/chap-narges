@@ -573,7 +573,7 @@ html[data-theme="light"] .cta-block{margin-top:90px;margin-bottom:96px}
 			document.documentElement.setAttribute('data-theme', 'dark');
 			if (themeBtn) themeBtn.textContent = '☀️';
 		} else {
-			document.documentElement.removeAttribute('data-theme');
+			document.documentElement.setAttribute('data-theme', 'light');
 			if (themeBtn) themeBtn.textContent = '🌙';
 		}
 	}
