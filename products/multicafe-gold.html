@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>نمونه‌کارها — چاپ نرگس</title>
+<title>چاپ نرگس — تولید انواع اتیکت و لیبل</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" media="all">
 <script>
 (function(){try{if(localStorage.getItem('narges-theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();
@@ -467,16 +467,9 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 
 /* light mode: فاصله بیشتر بین شرکا و CTA */
 html[data-theme="light"] .cta-block{margin-top:90px;margin-bottom:96px}
-
-/* Lightbox */.lb-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9999;place-items:center;cursor:zoom-out;backdrop-filter:blur(6px)}
-.lb-overlay.is-open{display:grid}
-.lb-overlay img{max-width:90vw;max-height:85vh;border-radius:12px;box-shadow:0 8px 40px rgba(0,0,0,.5);object-fit:contain}
-
-.lb-caption{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:#fff;font-size:1.1rem;text-align:center;background:rgba(0,0,0,.5);padding:8px 20px;border-radius:8px;max-width:80vw;white-space:nowrap}
-.port-item:hover .port-item__link{opacity:1}
-.port-item__link:hover{transform:translateX(-50%) scale(1.05)!important}
 </style>
 </head>
+
 <header class="site-header">
 
 	<div class="site-header__main">
@@ -505,120 +498,38 @@ html[data-theme="light"] .cta-block{margin-top:90px;margin-bottom:96px}
 		</div>
 	</div>
 </header>
+
 <section class="page-hero">
   <div class="container">
     <nav class="breadcrumb" style="font-size:.85rem;margin-bottom:14px;position:relative;z-index:2">
-      <a href="index.html" style="color:#fff;opacity:.75">خانه</a> <span style="opacity:.5">/</span> <span style="color:var(--n-accent)">نمونه‌کارها</span>
+      <a href="index.html" style="color:#fff;opacity:.75">خانه</a> <span style="opacity:.5">/</span>
+      <a href="portfolio.html" style="color:#fff;opacity:.75">نمونه‌کارها</a> <span style="opacity:.5">/</span>
+      <span style="color:var(--n-accent)">قهوه MultiCafe Gold</span>
     </nav>
-    <h1 style="font-size:2.4rem;font-weight:900;background:linear-gradient(135deg,#4dd8e4,#9ec8ff);-webkit-background-clip:text;background-clip:text;color:transparent">نمونه‌کارها</h1>
-    <p>گزیده‌ای از اتیکت‌های تولیدشده برای برندهای صنعتی و مصرفی.</p>
+    <h1 style="font-size:2.2rem;font-weight:900;background:linear-gradient(135deg,#4dd8e4,#9ec8ff);-webkit-background-clip:text;background-clip:text;color:transparent">قهوه MultiCafe Gold</h1>
+    <p>شیشه — ۱۰۰% خالص</p>
   </div>
 </section>
-<section class="section section--gray" style="padding-top:56px">
-  <div class="container">
-    <div class="port-filter" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:36px">
-      <button class="pf-btn is-active" data-filter="all">همه</button>
-<button class="pf-btn" data-filter="خودرویی">خودرویی</button>
-<button class="pf-btn" data-filter="غذایی">غذایی</button>
-<button class="pf-btn" data-filter="کشاورزی">کشاورزی</button>
-<button class="pf-btn" data-filter="آرایشی">آرایشی</button>
-<button class="pf-btn" data-filter="بهداشتی">بهداشتی</button>
-<button class="pf-btn" data-filter="شوینده">شوینده</button>
-    </div>
-    <div class="portfolio-grid" id="portGrid">
-      <article class="port-item" data-cat="خودرویی"><span class="port-item__cat">خودرویی</span><div class="port-item__img"><img src="images/portfolio/mavtan-oil-bottle.jpg" alt="روغن موتور MAVTAN" loading="lazy"></div><div class="port-item__overlay"><h3>روغن موتور MAVTAN</h3><span>بطری 1170g</span></div><a href="products/mavtan-oil-bottle.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="خودرویی"><span class="port-item__cat">خودرویی</span><div class="port-item__img"><img src="images/portfolio/mavtan-oil-jerrycan.jpg" alt="روغن موتور MAVTAN" loading="lazy"></div><div class="port-item__overlay"><h3>روغن موتور MAVTAN</h3><span>قوطی 20 لیتری</span></div><a href="products/mavtan-oil-jerrycan.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="خودرویی"><span class="port-item__cat">خودرویی</span><div class="port-item__img"><img src="images/portfolio/brake-fluid-blue.jpg" alt="روغن ترمز" loading="lazy"></div><div class="port-item__overlay"><h3>روغن ترمز</h3><span>بطری آبی High Performance</span></div><a href="products/brake-fluid-blue.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="خودرویی"><span class="port-item__cat">خودرویی</span><div class="port-item__img"><img src="images/portfolio/brake-fluid-yellow.jpg" alt="روغن ترمز" loading="lazy"></div><div class="port-item__overlay"><h3>روغن ترمز</h3><span>بطری زرد High Performance</span></div><a href="products/brake-fluid-yellow.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="خودرویی"><span class="port-item__cat">خودرویی</span><div class="port-item__img"><img src="images/portfolio/bio-motors-oil.jpg" alt="روغن موتور BIO-Motors" loading="lazy"></div><div class="port-item__overlay"><h3>روغن موتور BIO-Motors</h3><span>قوطی قرمز 4L</span></div><a href="products/bio-motors-oil.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="خودرویی"><span class="port-item__cat">خودرویی</span><div class="port-item__img"><img src="images/portfolio/isago-oil.jpg" alt="روغن موتور ISAGO" loading="lazy"></div><div class="port-item__overlay"><h3>روغن موتور ISAGO</h3><span>بطری آبی</span></div><a href="products/isago-oil.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="خودرویی"><span class="port-item__cat">خودرویی</span><div class="port-item__img"><img src="images/portfolio/apex-rotella.jpg" alt="روغن موتور APEX Rotella" loading="lazy"></div><div class="port-item__overlay"><h3>روغن موتور APEX Rotella</h3><span>قوطی فلزی</span></div><a href="products/apex-rotella.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="خودرویی"><span class="port-item__cat">خودرویی</span><div class="port-item__img"><img src="images/portfolio/amitis-gear-oil.jpg" alt="روغن گیربکس AMITIS" loading="lazy"></div><div class="port-item__overlay"><h3>روغن گیربکس AMITIS</h3><span>بطری سبز 1L</span></div><a href="products/amitis-gear-oil.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="خودرویی"><span class="port-item__cat">خودرویی</span><div class="port-item__img"><img src="images/portfolio/takeoff-perfume.jpg" alt="ادکلن خودرو TAKE OFF" loading="lazy"></div><div class="port-item__overlay"><h3>ادکلن خودرو TAKE OFF</h3><span>اسپری</span></div><a href="products/takeoff-perfume.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="خودرویی"><span class="port-item__cat">خودرویی</span><div class="port-item__img"><img src="images/portfolio/ibbc-bearing.jpg" alt="یاتاقان IBBC" loading="lazy"></div><div class="port-item__overlay"><h3>یاتاقان IBBC</h3><span>جعبه گارانتی ۳ ساله</span></div><a href="products/ibbc-bearing.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="خودرویی"><span class="port-item__cat">خودرویی</span><div class="port-item__img"><img src="images/portfolio/atom-battery.jpg" alt="باطری ATOM" loading="lazy"></div><div class="port-item__overlay"><h3>باطری ATOM</h3><span>.super maintenance free</span></div><a href="products/atom-battery.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/jamas-tea.jpg" alt="چای Jamas Earl Grey" loading="lazy"></div><div class="port-item__overlay"><h3>چای Jamas Earl Grey</h3><span>جعبه 100 عددی</span></div><a href="products/jamas-tea.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/multicafe-gold.jpg" alt="قهوه MultiCafe Gold" loading="lazy"></div><div class="port-item__overlay"><h3>قهوه MultiCafe Gold</h3><span>شیشه</span></div><a href="products/multicafe-gold.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/multicafe-classic.jpg" alt="قهوه MultiCafe Classic" loading="lazy"></div><div class="port-item__overlay"><h3>قهوه MultiCafe Classic</h3><span>شیشه</span></div><a href="products/multicafe-classic.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/badr-garlic.jpg" alt="ترشی سیر BADR" loading="lazy"></div><div class="port-item__overlay"><h3>ترشی سیر BADR</h3><span>شیشه</span></div><a href="products/badr-garlic.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/lorenzo-garlic.jpg" alt="ترشی سیر Lorenzo" loading="lazy"></div><div class="port-item__overlay"><h3>ترشی سیر Lorenzo</h3><span>شیشه</span></div><a href="products/lorenzo-garlic.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/lorenzo-olive.jpg" alt="زیتون Lorenzo" loading="lazy"></div><div class="port-item__overlay"><h3>زیتون Lorenzo</h3><span>شیشه</span></div><a href="products/lorenzo-olive.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/alolbaaz-pepper.jpg" alt="فلفل Alolbaaz" loading="lazy"></div><div class="port-item__overlay"><h3>فلفل Alolbaaz</h3><span>شیشه</span></div><a href="products/alolbaaz-pepper.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/thai-chili-sauce.jpg" alt="سس فلفل تایلندی" loading="lazy"></div><div class="port-item__overlay"><h3>سس فلفل تایلندی</h3><span>شیشه</span></div><a href="products/thai-chili-sauce.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/baghaa-jam.jpg" alt="مربای توت‌فرنگی Baghaa" loading="lazy"></div><div class="port-item__overlay"><h3>مربای توت‌فرنگی Baghaa</h3><span>شیشه</span></div><a href="products/baghaa-jam.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/kaminer-jam.jpg" alt="مربای پرتقالی Kaminer" loading="lazy"></div><div class="port-item__overlay"><h3>مربای پرتقالی Kaminer</h3><span>شیشه</span></div><a href="products/kaminer-jam.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/bassam-pomegranate.jpg" alt="رب انار BASSAM" loading="lazy"></div><div class="port-item__overlay"><h3>رب انار BASSAM</h3><span>بطری</span></div><a href="products/bassam-pomegranate.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/mousavi-dates.jpg" alt="خرمای نک موسوی" loading="lazy"></div><div class="port-item__overlay"><h3>خرمای نک موسوی</h3><span>بسته‌بندی</span></div><a href="products/mousavi-dates.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/golbaaz-pumpkin.jpg" alt="کدو شیرین Golbaaz" loading="lazy"></div><div class="port-item__overlay"><h3>کدو شیرین Golbaaz</h3><span>بسته‌بندی سینی</span></div><a href="products/golbaaz-pumpkin.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/decful-mushroom.jpg" alt="قارچ Decful" loading="lazy"></div><div class="port-item__overlay"><h3>قارچ Decful</h3><span>بسته‌بندی سینی</span></div><a href="products/decful-mushroom.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/aila-tahini.jpg" alt="ارده کرمی Aila" loading="lazy"></div><div class="port-item__overlay"><h3>ارده کرمی Aila</h3><span>شیشه</span></div><a href="products/aila-tahini.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/varly-eggplant.jpg" alt="کنسرو خورک بادمجان Varly" loading="lazy"></div><div class="port-item__overlay"><h3>کنسرو خورک بادمجان Varly</h3><span>کنسرو</span></div><a href="products/varly-eggplant.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="غذایی"><span class="port-item__cat">غذایی</span><div class="port-item__img"><img src="images/portfolio/paniclub-sandwich.jpg" alt="ساندویچ PaniClub" loading="lazy"></div><div class="port-item__overlay"><h3>ساندویچ PaniClub</h3><span>بسته‌بندی 150g</span></div><a href="products/paniclub-sandwich.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="کشاورزی"><span class="port-item__cat">کشاورزی</span><div class="port-item__img"><img src="images/portfolio/liquid-sulfur.jpg" alt="کود Liquid Sulfur+K" loading="lazy"></div><div class="port-item__overlay"><h3>کود Liquid Sulfur+K</h3><span>بطری</span></div><a href="products/liquid-sulfur.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="کشاورزی"><span class="port-item__cat">کشاورزی</span><div class="port-item__img"><img src="images/portfolio/alpha-cal.jpg" alt="کود Alpha Cal 27" loading="lazy"></div><div class="port-item__overlay"><h3>کود Alpha Cal 27</h3><span>بطری</span></div><a href="products/alpha-cal.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="کشاورزی"><span class="port-item__cat">کشاورزی</span><div class="port-item__img"><img src="images/portfolio/alpha-20.jpg" alt="کود Alpha 20" loading="lazy"></div><div class="port-item__overlay"><h3>کود Alpha 20</h3><span>بطری</span></div><a href="products/alpha-20.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="کشاورزی"><span class="port-item__cat">کشاورزی</span><div class="port-item__img"><img src="images/portfolio/kimiya-insecticide.jpg" alt="سم کیمیا" loading="lazy"></div><div class="port-item__overlay"><h3>سم کیمیا</h3><span>ظروف 1 لیتری</span></div><a href="products/kimiya-insecticide.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="کشاورزی"><span class="port-item__cat">کشاورزی</span><div class="port-item__img"><img src="images/portfolio/shiro-fertilizer.jpg" alt="کود SHIRO 15+5+30" loading="lazy"></div><div class="port-item__overlay"><h3>کود SHIRO 15+5+30</h3><span>کیسه</span></div><a href="products/shiro-fertilizer.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="کشاورزی"><span class="port-item__cat">کشاورزی</span><div class="port-item__img"><img src="images/portfolio/mono-ammonium.jpg" alt="مونوآمونیوم فسفات" loading="lazy"></div><div class="port-item__overlay"><h3>مونوآمونیوم فسفات</h3><span>کیسه 12-60-0</span></div><a href="products/mono-ammonium.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="کشاورزی"><span class="port-item__cat">کشاورزی</span><div class="port-item__img"><img src="images/portfolio/humifeull-fe.jpg" alt="کود HumiFull +Fe" loading="lazy"></div><div class="port-item__overlay"><h3>کود HumiFull +Fe</h3><span> DanNahal</span></div><a href="products/humifeull-fe.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="آرایشی"><span class="port-item__cat">آرایشی</span><div class="port-item__img"><img src="images/portfolio/vaseline.jpg" alt="وازلین Blue Seal" loading="lazy"></div><div class="port-item__overlay"><h3>وازلین Blue Seal</h3><span>پلاستیک</span></div><a href="products/vaseline.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="آرایشی"><span class="port-item__cat">آرایشی</span><div class="port-item__img"><img src="images/portfolio/dina-nail-remover.jpg" alt="پاککننده ناخن Dina" loading="lazy"></div><div class="port-item__overlay"><h3>پاککننده ناخن Dina</h3><span>بدون استون</span></div><a href="products/dina-nail-remover.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="آرایشی"><span class="port-item__cat">آرایشی</span><div class="port-item__img"><img src="images/portfolio/highness-mask.jpg" alt="ماسک سیاه HIGHNESS" loading="lazy"></div><div class="port-item__overlay"><h3>ماسک سیاه HIGHNESS</h3><span>پمپ+جعبه</span></div><a href="products/highness-mask.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="آرایشی"><span class="port-item__cat">آرایشی</span><div class="port-item__img"><img src="images/portfolio/stemcell-bodywash.jpg" alt="شستشوی بدن Stem Cell" loading="lazy"></div><div class="port-item__overlay"><h3>شستشوی بدن Stem Cell</h3><span>بطری+جعبه</span></div><a href="products/stemcell-bodywash.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="بهداشتی"><span class="port-item__cat">بهداشتی</span><div class="port-item__img"><img src="images/portfolio/jaksons-baby.jpg" alt="شامپو بچه Jaksons" loading="lazy"></div><div class="port-item__overlay"><h3>شامپو بچه Jaksons</h3><span>بطری</span></div><a href="products/jaksons-baby.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="بهداشتی"><span class="port-item__cat">بهداشتی</span><div class="port-item__img"><img src="images/portfolio/stemcell-shampoo.jpg" alt="شامپو Stem Cell" loading="lazy"></div><div class="port-item__overlay"><h3>شامپو Stem Cell</h3><span>بطری</span></div><a href="products/stemcell-shampoo.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="بهداشتی"><span class="port-item__cat">بهداشتی</span><div class="port-item__img"><img src="images/portfolio/dina-cotton-swabs.jpg" alt="گوش پاککن Dina" loading="lazy"></div><div class="port-item__overlay"><h3>گوش پاککن Dina</h3><span>100 عددی</span></div><a href="products/dina-cotton-swabs.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="شوینده"><span class="port-item__cat">شوینده</span><div class="port-item__img"><img src="images/portfolio/nab-dishwash-red.jpg" alt="مایع ظرفشویی NAB" loading="lazy"></div><div class="port-item__overlay"><h3>مایع ظرفشویی NAB</h3><span>3x power</span></div><a href="products/nab-dishwash-red.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="شوینده"><span class="port-item__cat">شوینده</span><div class="port-item__img"><img src="images/portfolio/nab-dishwash-green.jpg" alt="مایع ظرفشویی NAB" loading="lazy"></div><div class="port-item__overlay"><h3>مایع ظرفشویی NAB</h3><span>1500g لیمویی</span></div><a href="products/nab-dishwash-green.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
-<article class="port-item" data-cat="شوینده"><span class="port-item__cat">شوینده</span><div class="port-item__img"><img src="images/portfolio/dettol-spray.jpg" alt="اسپری Dettol" loading="lazy"></div><div class="port-item__overlay"><h3>اسپری Dettol</h3><span>تمیزکننده فوری</span></div><a href="products/dettol-spray.html" class="port-item__link" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:8px 20px;border-radius:8px;background:rgba(0,188,212,.9);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:5;white-space:nowrap;opacity:0;transition:.2s">بیشتر بدانید</a>
-</article>
+
+<section class="section">
+  <div class="container" style="max-width:900px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start">
+      <div style="border-radius:16px;overflow:hidden;background:linear-gradient(135deg,var(--n-prime),#1d476f);aspect-ratio:1;display:grid;place-items:center">
+        <img src="images/portfolio/multicafe-gold.jpg" alt="قهوه MultiCafe Gold" style="width:100%;height:100%;object-fit:contain">
+      </div>
+      <div>
+        <div style="display:inline-block;padding:4px 14px;border-radius:20px;font-size:.8rem;font-weight:600;margin-bottom:16px;background:rgba(0,188,212,.15);color:var(--n-accent)">غذایی</div>
+        <h2 style="font-size:1.6rem;font-weight:800;margin-bottom:8px;color:var(--n-heading)">قهوه MultiCafe Gold</h2>
+        <p style="font-size:1rem;color:var(--n-medium);margin-bottom:24px;line-height:1.7">قهوه فوری MultiCafe Gold با طعم ۱۰۰% خالص. بسته‌بندی شیشه‌ای با طراحی ایتالیایی. مناسب صبحانه و میان‌وعده.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="https://wa.me/989051398905?text=سلام، درباره قهوه MultiCafe Gold سوال دارم" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:12px;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;font-weight:700;text-decoration:none;transition:.2s">مشاوره رایگان</a>
+          <a href="tel:09051398905" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:12px;border:1px solid var(--n-border);color:var(--n-heading);font-weight:700;text-decoration:none;transition:.2s">تماس مستقیم</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
 <footer class="site-footer">
 	<div class="footer__top">
 		<div class="container footer-grid">
@@ -761,44 +672,4 @@ html[data-theme="light"] .cta-block{margin-top:90px;margin-bottom:96px}
 
 </body>
 
-<script>document.querySelectorAll(".pf-btn").forEach(function(b){b.addEventListener("click",function(){document.querySelectorAll(".pf-btn").forEach(function(x){x.classList.remove("is-active")});b.classList.add("is-active");var f=b.dataset.filter;document.querySelectorAll(".port-item").forEach(function(it){it.style.display=(f==="all"||it.dataset.cat===f)?"":"none"})})})</script>
-<style>.pf-btn{background:transparent;border:1px solid rgba(0,188,212,.35);color:var(--n-medium);padding:8px 22px;border-radius:30px;cursor:pointer;font-family:inherit;font-size:.9rem;transition:.2s}.pf-btn:hover{border-color:var(--n-accent);color:var(--n-accent)}.pf-btn.is-active{background:linear-gradient(135deg,var(--n-accent),#1c52a8);border-color:transparent;color:#fff;font-weight:700}.port-item__img{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(135deg,var(--n-prime),#1d476f);overflow:hidden}.port-item__img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.port-item:hover .port-item__img img{transform:scale(1.08)}.port-item__bg{display:none}@media(max-width:640px){.portfolio-grid{grid-template-columns:1fr 1fr}.page-hero h1{font-size:1.8rem}}
-/* Lightbox */.lb-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9999;place-items:center;cursor:zoom-out;backdrop-filter:blur(6px)}
-.lb-overlay.is-open{display:grid}
-.lb-overlay img{max-width:90vw;max-height:85vh;border-radius:12px;box-shadow:0 8px 40px rgba(0,0,0,.5);object-fit:contain}
-
-.lb-caption{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:#fff;font-size:1.1rem;text-align:center;background:rgba(0,0,0,.5);padding:8px 20px;border-radius:8px;max-width:80vw;white-space:nowrap}
-.port-item:hover .port-item__link{opacity:1}
-.port-item__link:hover{transform:translateX(-50%) scale(1.05)!important}
-</style>
-<script>
-(function(){
-  var ov=document.createElement('div');
-  ov.className='lb-overlay';
-  ov.innerHTML='<img src=""><div class="lb-caption"></div>';
-  document.body.appendChild(ov);
-  var img=ov.querySelector('img'), cap=ov.querySelector('.lb-caption');
-  function close(){ov.classList.remove('is-open');document.body.style.overflow=''}
-  ov.addEventListener('click',function(e){if(e.target!==img)close()});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
-  document.querySelectorAll('.port-item').forEach(function(el){
-    el.style.cursor='zoom-in';
-    el.addEventListener('click',function(){
-      var i=el.querySelector('img');
-      img.src=i.src;
-      cap.textContent=el.querySelector('h3').textContent+' \u2014 '+el.querySelector('.port-item__overlay span').textContent;
-      ov.classList.add('is-open');
-      document.body.style.overflow='hidden';
-    });
-  });
-})();
-</script>
-<div class="float-menu" id="floatMenu">
-	<div class="float-items">
-		<a href="https://wa.me/989051398905" target="_blank" rel="noopener" aria-label="واتساپ" title="واتساپ"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-		<a href="https://t.me/Nargesprinting" target="_blank" rel="noopener" aria-label="تلگرام" title="تلگرام"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-16.5 7.5a2.25 2.25 0 0 0 .126 4.153l4.15 1.66 9.35-6.5a.75.75 0 0 1 .9 1.2l-7.75 6.25v3.25a1.25 1.25 0 0 0 2 1l2.25-1.75 4.5 3.375a1.25 1.25 0 0 0 1.95-.975l2.25-16.5a2.25 2.25 0 0 0-1.754-2.463z"/></svg></a>
-		<a href="tel:09051398905" aria-label="تماس" title="تماس"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></a>
-	</div>
-	<button class="wa-float" aria-label="ارتباط سریع" onclick="document.getElementById('floatMenu').classList.toggle('active')"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
-</div>
 </html>
