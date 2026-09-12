@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shoghalblade.github.io/chap-narges/sitemap.xml
+Sitemap: https://nargesprinting.ir/sitemap.xml
