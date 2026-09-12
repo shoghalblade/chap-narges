@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shoghalblade.github.io/chap-narges/sitemap.xml
