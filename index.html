@@ -462,7 +462,10 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 .partner-card:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,188,212,.3)}
 .partner-card img{max-height:80px;max-width:140px;object-fit:contain}
 .partner-card span{font-size:1rem;color:var(--n-heading);font-weight:700;text-align:center}
-@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 15px)); }
+}100%{transform:translateX(-50%)}}
 
 
 /* light mode: فاصله بیشتر بین شرکا و CTA */
