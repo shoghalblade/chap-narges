@@ -454,10 +454,12 @@ h3{font-size:clamp(1.15rem,2.3vw,1.45rem)}
 .partner-section{background:var(--n-dark);padding:50px 0}
 .partner-section h3{text-align:center;color:var(--n-accent);font-size:1.3rem;margin-bottom:35px;font-weight:800}
 .partner-marquee{overflow:hidden;width:100%;padding:10px 0;position:relative}
-.partner-marquee::before,.partner-marquee::after{content:'';position:absolute;top:0;width:80px;height:100%;z-index:2;pointer-events:none}
-.partner-marquee::before{left:0;background:linear-gradient(to right,var(--n-dark),transparent)}
-.partner-marquee::after{right:0;background:linear-gradient(to left,var(--n-dark),transparent)}
-.partner-track{display:flex;gap:30px;animation:marqueeLoop 30s linear infinite;width:max-content}
+.partner-marquee{overflow:hidden;width:100%;position:relative;padding:20px 0}
+.partner-track{display:flex;gap:30px;animation:marquee 35s linear infinite;width:max-content}
+@keyframes marquee{
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
 .partner-card{min-width:180px;height:140px;display:flex;align-items:center;justify-content:center;background:#00b8d4;border-radius:20px;padding:20px 30px;flex-shrink:0;transition:all .3s ease;cursor:default;box-shadow:0 4px 15px rgba(0,188,212,.15)}
 .partner-card:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,188,212,.3)}
 .partner-card img{max-height:80px;max-width:140px;object-fit:contain}
