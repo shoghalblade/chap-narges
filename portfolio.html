@@ -792,6 +792,19 @@ html[data-theme="light"] .cta-block{margin-top:90px;margin-bottom:96px}
     });
   });
 })();
+
+// Category filter from URL hash
+(function(){
+  var hash = decodeURIComponent(location.hash.replace('#',''));
+  if(hash){
+    document.querySelectorAll('.port-item').forEach(function(p){
+      p.style.display = p.dataset.cat===hash?'':'none';
+    });
+    // show "all" button state
+    var allBtn = document.querySelector('.cat-btn[data-cat="all"]');
+    if(allBtn) allBtn.classList.remove('active');
+  }
+})();
 </script>
 <div class="float-menu" id="floatMenu">
 	<div class="float-items">
